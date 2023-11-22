@@ -12,32 +12,91 @@
 <body>
   
     <div class="header__container">  
+
       <header class="header">
+
         <a class="header__logo__link" href="./index.html">
           food delivery
         </a>
+
         <nav class="nav">
+
           <ul class="nav__list">
-            <li class="nav__items">
-              <a href="#" class="nav__link">
-                Katalog
+
+            <li class="nav__items menu toggle" onclick="toggleNested(this)">
+
+              <a href="#" class="nav__link">Menu
+                <ul class="nested">
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../Першістрави/index.html">
+                      Перші страви
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../Другістрави/index.html">
+                      Другі страви
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../Гарніри/index.html">
+                      Гарніри
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../FastFood/index.html">
+                      FastFood
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">   
+
+                    <a class="nested__links" href="../Напої/index.html">
+                      Напої
+                    </a>
+
+                  </li>
+                
+                </ul>
+
               </a>
+
             </li>
 
+            
             <li class="nav__items">
+
+              <a href="../Basket/index.html" class="nav__link">
+                Корзина               
+              </a>
+
+            </li>
+            
+            <li class="nav__items">
+
               <a href="../login/index.html" class="nav__link">
                 Login
               </a>
+
             </li>
 
-            <li class="nav__items">
-              <a href="../login/index.html" class="nav__link">
-                Корзина
-              </a>
-            </li>
           </ul>
+
         </nav>
+
       </header>
+
     </div>
 
     <container class="main__container">
@@ -53,6 +112,11 @@
             </h1>
 
           </div>
+
+          <div class="section__bottom__img__block">
+            <img class="section__bottom__img" src="./images/desktop.jpg" alt="Courier Foto">
+          </div>
+
         </section>
 
         <section class="section__bottom section">
@@ -112,11 +176,6 @@
         
         </section>
 
-
-
-
-        
-
         <section class="section__bottom section">
           
           <div class="section__bottom__text">
@@ -173,11 +232,6 @@
         
         </section>
 
-
-
-
-
-
         <section class="section__support section">
 
           <div class="section__support__text">
@@ -209,11 +263,10 @@
               </p>
 
               <button class="section__support__btn">
-                <a class="section__support__btn__a" href="../LoginCourier/index.html">Зареєструватися</a>
+                <a class="section__support__btn__a" href="../Registration/index.html">Зареєструватися</a>
               </button>
 
             </div>
-
 
             
             <div class="section__support__links__user">
@@ -221,7 +274,7 @@
               <img class="section__support__img" src="./images/careers-image.webp" alt="User Foto">
 
               <h3 class="section__h3">
-                Стати кур'єром
+                Користувач
               </h3>
 
               <p class="section__p section__support__p">
@@ -229,21 +282,76 @@
               </p>
               
               <button class="section__support__btn">
-                <a class="section__support__btn__a" href="../loginUser/index.html">Зареєструватися</a>
+
+                <a class="section__support__btn__a" href="../Registration/">Зареєструватися</a>
+              
               </button>
 
           </div>
-
 
         </section>
     
       </main>
 
+    </container>
+    
+    
+    <section class="section__footer">
+
+    <container class="main__container">
+      
       <footer class="footer">
+       
+        <div class="footer__logo">
+
+          <a class="header__logo__link" href="./index.html">
+            food delivery
+          </a>
+
+        </div>
+       
+        <div class="footer__contact">
+
+          <h2>Contact Information</h2>
+          
+          <p>Address: 123 Main Street, City, Country</p>
+          
+          <p>Email: info@example.com</p>
+          
+          <p>Phone: +1 123-456-7890</p>
+
+        </div>
+        
+        <div class="footer__aboutUs">
+
+          <h2>
+
+            <a href="../AboutUs/inedx.html">
+              About us
+            </a>
+
+          </h2>
+
+        </div>
 
       </footer>
-  
+      
     </container>
 
+  </section>
+  
+  
+
+  <script>
+   function toggleNested(element) {
+      var nestedList = element.querySelector('.nested');
+      nestedList.classList.toggle('active');
+      document.addEventListener('click', function (event) {
+        if (!element.contains(event.target)) {
+          nestedList.classList.remove('active');
+        }
+      });
+    }
+  </script>
 </body>
 </html>
