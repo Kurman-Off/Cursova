@@ -6,6 +6,7 @@ body {
   --mainColor4: rgb(240, 240, 175);
   --mainColorSection: #f9f9f9;
   --mainColorP: rgba(18,29,43,.6);
+  --mainColorBnt: rgb(58 170 84);
   background-color: var(--mainColor4);
 }
 
@@ -184,8 +185,9 @@ a {
 .section__support__btn {
   width: 300px;
   height: 70px;
-  background-color: rgb(58 170 84);
-  border-radius: 20px;
+  background-color: var(--mainColorBnt);
+  border: 1px solid var(--mainColorBnt);
+  border-radius: 30px;
 }
 
 .section__support__btn__a {
