@@ -141,7 +141,7 @@ a {
   padding-top: 25px;
 }
 
-.section__sepport__text {
+.section__support__text {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -175,6 +175,7 @@ a {
 }
 
 .section__support__img {
+  text-align: center;
   width: 250px;
 }
 
