@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <title>Перші Страви</title>
+</head>
+<body>
+  <div class="header__container">  
+
+    <header class="header">
+
+      <a class="header__logo__link" href="../mainPage/">
+        food delivery
+      </a>
+
+      <nav class="nav">
+
+        <ul class="nav__list">
+          <li class="nav__items menu toggle" onclick="toggleNested(this)">
+            <a href="#" class="nav__link">Menu
+              <ul class="nested">
+                <li class="nested__items">
+                  <a class="nested__links" href="../Першістрави/">
+                    Перші страви
+                  </a>
+                </li>
+                
+                <li class="nested__items">
+                  <a class="nested__links" href="../Другістрави/">
+                    Другі страви
+                  </a>
+                </li>
+                
+                <li class="nested__items">
+                  <a class="nested__links" href="../Гарніри/">
+                    Гарніри
+                  </a>
+                </li>
+                
+                <li class="nested__items">
+                  <a class="nested__links" href="../FastFood/">
+                    FastFood
+                  </a>
+                </li>
+                
+                <li class="nested__items">   
+                  <a class="nested__links" href="../Напої/">
+                    Напої
+                  </a>
+                </li>
+              </ul>
+            </a>
+          </li>
+
+          
+          <li class="nav__items">
+            <a href="../Basket/" class="nav__link">
+              Корзина               
+            </a>
+          </li>
+          
+          <li class="nav__items">
+            <a href="../login/" class="nav__link">
+              Login
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <wrapper class="wrapper">
+    <main class="main">
+
+      <div class="block">
+        <section class="section__top">
+          <div>
+            <img src="./images/борш.jpg" alt="Борщ">
+          </div>
+  
+            Борщ (400г)
+  
+        </section>
+  
+        <section class="section__bottom">
+          <div>
+            <p>145,00₴</p>
+          </div>
+
+          <button class="btn__buy">Додати до корзини</button>          
+        </section>
+  
+      </div>
+
+      <div class="block">
+        <section class="section__top">
+          <div>
+            <img src="./images/грибнийсуп.jpg" alt="Грибний суп">
+        
+          </div>
+  
+          Грибний суп (250г)
+  
+        </section>
+  
+        <section class="section__bottom">
+          <div>
+            <p>120,00₴</p>
+          </div>
+
+          <button class="btn__buy">Додати до корзини</button>          
+        </section>
+  
+      </div>
+
+      <div class="block">
+        <section class="section__top">
+          <div>
+            <img src="./images/hkehjnktubqdefd6szm1.webp" alt="Солянка">
+          </div>
+  
+            Солянка (350г)
+  
+        </section>
+  
+        <section class="section__bottom">
+          <div class="price">
+            <p>160,00₴</p>
+          </div>
+
+          <button class="btn__buy">Додати до корзини</button>          
+        </section>
+  
+      </div>
+    </main>
+  </wrapper>
+
+  <script>
+    function toggleNested(element) {
+       var nestedList = element.querySelector('.nested');
+       nestedList.classList.toggle('active');
+       document.addEventListener('click', function (event) {
+         if (!element.contains(event.target)) {
+           nestedList.classList.remove('active');
+         }
+       });
+     }
+   </script>
+</body>
+</html>

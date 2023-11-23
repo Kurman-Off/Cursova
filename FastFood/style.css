@@ -1,0 +1,157 @@
+body {
+  margin: 0;
+  --mainColorOrange: rgb(247, 189, 127);
+  --mainColorText: rgb(192, 201, 113);
+  --mainColor: rgb(255, 254, 230);
+  --mainColor4: rgb(240, 240, 175);
+  --mainColorSection: #f9f9f9;
+  --mainColorP: rgba(18,29,43,.6);
+  --mainColorBnt: rgb(58 170 84);
+  background-color: var(--mainColor4);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 80px;
+  height: 80px;
+}
+
+p {
+  margin: 0;
+}
+
+.header__container {
+  background-color: var(--mainColor);
+  height: 100%;
+  border-bottom: 1px solid var(--mainColorText);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1400px;
+  margin: 0 auto;
+  height: 60px;
+  padding: 10px 0;
+  background-color: var(--mainColor);
+}
+
+.header__logo__link {
+  color: var(--mainColorText);
+  font-family: 'Kdam Thmor Pro', sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.nav__list {
+  display: flex;
+  gap: 70px;
+  width: 100%;
+}
+
+.nav__link {
+  color: var(--mainColorText);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+}
+
+.menu {
+  position: relative;
+}
+
+.nested {
+  display: none;
+}
+
+.active {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+  background-color: var(--mainColorText);
+  width: 300px;
+  height: 300px;
+  padding: 15px;
+  margin-top: 30px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  z-index: 10;
+}
+
+.nested__links {
+  color: var(--mainColorSection);
+}
+
+.wrapper {
+  display: block;
+  width: 1400px;
+  margin: 0 auto;
+}
+
+.main {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.kfc {
+  display: flex;
+  gap: 20px;
+}
+
+.pizza {
+  display: flex;
+  gap: 20px;
+}
+
+.block {
+  padding: 15px;
+  font-family: 'Roboto', sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  background-color: var(--mainColorSection);
+  color: var(--mainColorText);
+  min-height: 150px;
+  border: 1px solid rgb(179, 172, 172);
+  border-radius: 15px;
+  width: 33.3%;
+}
+
+.block:hover {
+  box-shadow: 1px 1px 20px rgb(179, 172, 172);
+  transform: scale(1.02);
+}
+
+.section__top {
+  display: flex;
+  gap: 20px;
+}
+
+.section__bottom {
+  display: flex;
+  align-items: flex-end;
+  gap: 20px;
+  height: 50%;
+}
+
+.btn__buy {
+  height: 30px;
+  background-color: lightgray;
+  border: 1px solid lightslategray;
+  border-radius: 15px;
+  padding: 0 20px;
+  cursor: pointer;
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <title>FastFood</title>
+</head>
+<body>
+  <div class="header__container">  
+
+    <header class="header">
+
+      <a class="header__logo__link" href="../mainPage/">
+        food delivery
+      </a>
+
+      <nav class="nav">
+
+        <ul class="nav__list">
+          <li class="nav__items menu toggle" onclick="toggleNested(this)">
+            <a href="#" class="nav__link">Menu
+              <ul class="nested">
+                <li class="nested__items">
+                  <a class="nested__links" href="../Першістрави/">
+                    Перші страви
+                  </a>
+                </li>
+                
+                <li class="nested__items">
+                  <a class="nested__links" href="../Другістрави/">
+                    Другі страви
+                  </a>
+                </li>
+                
+                <li class="nested__items">
+                  <a class="nested__links" href="../Гарніри/">
+                    Гарніри
+                  </a>
+                </li>
+                
+                <li class="nested__items">
+                  <a class="nested__links" href="../FastFood/">
+                    FastFood
+                  </a>
+                </li>
+                
+                <li class="nested__items">   
+                  <a class="nested__links" href="../Напої/">
+                    Напої
+                  </a>
+                </li>
+              </ul>
+            </a>
+          </li>
+
+          
+          <li class="nav__items">
+            <a href="../Basket/" class="nav__link">
+              Корзина               
+            </a>
+          </li>
+          
+          <li class="nav__items">
+            <a href="../login/" class="nav__link">
+              Login
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+  </div>
+
+  <wrapper class="wrapper">
+    <main class="main">
+
+      <div class="kfc">
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/R.jpg" alt="Картопля фрі">
+            </div>
+    
+            Картопля фрі (150г)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div>
+              <p>78,00₴</p>
+            </div>
+
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/o-FAST-FOOD-AND-FLAVOR-facebook.jpg" alt="Бургер">
+          
+            </div>
+    
+            Бургер (300г)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div>
+              <p>80,00₴</p>
+            </div>
+
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/R (1).jpg" alt="Крильця">
+            </div>
+    
+            Крильця (250г)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div class="price">
+              <p>60,00₴</p>
+            </div>
+
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+
+      </div>
+
+      <div class="pizza">
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/maxresdefault.jpg" alt="Піца Маргарита">
+            </div>
+    
+            Піца Маргарита (30см)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div class="price">
+              <p>160,00₴</p>
+            </div>
+
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/un3hccflscqwz5yctttbdmaplnkc7tls4ydqqf9ick5dwcakigujzrwm2j8saw49-.jpg" alt="Піца Папероні">
+            </div>
+    
+            Піца Папероні (30см)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div class="price">
+              <p>120,00₴</p>
+            </div>
+
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/OIP.jpg" alt="Піца Капрічоза">
+            </div>
+    
+            Капрічоза (30см)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div class="price">
+              <p>100,00₴</p>
+            </div>
+
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+      </div>
+    </main>
+  </wrapper>
+
+  <script>
+    function toggleNested(element) {
+       var nestedList = element.querySelector('.nested');
+       nestedList.classList.toggle('active');
+       document.addEventListener('click', function (event) {
+         if (!element.contains(event.target)) {
+           nestedList.classList.remove('active');
+         }
+       });
+     }
+   </script>
+</body>
+</html>
