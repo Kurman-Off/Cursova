@@ -36,9 +36,11 @@ p {
 .header {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
   align-items: center;
-  width: 1400px;
+  max-width: 1400px;
   margin: 0 auto;
+  padding: 20px;
   height: 60px;
   padding: 10px 0;
   background-color: var(--mainColor);
@@ -107,12 +109,7 @@ p {
   gap: 15px;
 }
 
-.kfc {
-  display: flex;
-  gap: 20px;
-}
-
-.pizza {
+.main__block__of__food {
   display: flex;
   gap: 20px;
 }
@@ -147,6 +144,9 @@ p {
   height: 50%;
 }
 
+.plus__minus__btn {
+  display: flex;
+}
 .btn__buy {
   height: 30px;
   background-color: lightgray;

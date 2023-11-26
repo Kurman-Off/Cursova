@@ -226,6 +226,7 @@ a {
 
 .active {
   position: absolute;
+  top: 23px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
