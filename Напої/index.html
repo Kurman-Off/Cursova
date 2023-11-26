@@ -78,7 +78,7 @@
   <wrapper class="wrapper">
     <main class="main">
 
-      <div class="kfc">
+      <div class="main__block__of__food">
         <div class="block">
           <section class="section__top">
             <div>
@@ -92,6 +92,12 @@
           <section class="section__bottom">
             <div>
               <p>35,00₴</p>
+            </div>
+
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
             </div>
 
             <button class="btn__buy">Додати до корзини</button>          
@@ -115,6 +121,12 @@
               <p>35,00₴</p>
             </div>
 
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
+            </div>
+
             <button class="btn__buy">Додати до корзини</button>          
           </section>
     
@@ -135,6 +147,12 @@
               <p>60,00₴</p>
             </div>
 
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
+            </div>
+
             <button class="btn__buy">Додати до корзини</button>          
           </section>
     
@@ -142,7 +160,7 @@
 
       </div>
 
-      <div class="pizza">
+      <div class="main__block__of__food">
         <div class="block">
           <section class="section__top">
             <div>
@@ -156,6 +174,12 @@
           <section class="section__bottom">
             <div class="price">
               <p>40,00₴</p>
+            </div>
+
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
             </div>
 
             <button class="btn__buy">Додати до корзини</button>          
@@ -178,6 +202,12 @@
               <p>50,00₴</p>
             </div>
 
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
+            </div>
+
             <button class="btn__buy">Додати до корзини</button>          
           </section>
     
@@ -198,6 +228,12 @@
               <p>100,00₴</p>
             </div>
 
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
+            </div>
+
             <button class="btn__buy">Додати до корзини</button>          
           </section>
     
@@ -206,6 +242,9 @@
     </main>
   </wrapper>
 
+  <script src="./index.js" type="module">
+  </script>
+  
   <script>
     function toggleNested(element) {
        var nestedList = element.querySelector('.nested');

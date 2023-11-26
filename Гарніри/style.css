@@ -103,11 +103,13 @@ p {
 .main {
   padding-top: 20px;
   display: flex;
+  flex-direction: column;
   gap: 15px;
 }
 
-.main div {
-  width: 33.3%;
+.main__block__of__food {
+  display: flex;
+  gap: 20px;
 }
 
 .block {
@@ -120,6 +122,7 @@ p {
   min-height: 150px;
   border: 1px solid rgb(179, 172, 172);
   border-radius: 15px;
+  width: 33.3%;
 }
 
 .block:hover {
@@ -129,12 +132,23 @@ p {
 
 .section__top {
   display: flex;
+  gap: 20px;
 }
 
 .section__bottom {
   display: flex;
   align-items: flex-end;
+  gap: 20px;
   height: 50%;
+}
+
+.plus__minus__btn {
+  display: flex;
+}
+
+.input__amount__of__food {
+  max-width: 30px;
+  text-align: center;
 }
 
 .btn__buy {

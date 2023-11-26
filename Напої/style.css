@@ -107,12 +107,7 @@ p {
   gap: 15px;
 }
 
-.kfc {
-  display: flex;
-  gap: 20px;
-}
-
-.pizza {
+.main__block__of__food {
   display: flex;
   gap: 20px;
 }
@@ -146,6 +141,14 @@ p {
   gap: 20px;
   height: 50%;
 }
+
+.plus__minus__btn {
+  display: flex;
+}
+
+.input__amount__of__food {
+  max-width: 30px;
+  text-align: center;}
 
 .btn__buy {
   height: 30px;

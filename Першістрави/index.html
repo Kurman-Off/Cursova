@@ -78,69 +78,94 @@
   <wrapper class="wrapper">
     <main class="main">
 
-      <div class="block">
-        <section class="section__top">
-          <div>
-            <img src="./images/борш.jpg" alt="Борщ">
-          </div>
-  
-            Борщ (400г)
-  
-        </section>
-  
-        <section class="section__bottom">
-          <div>
-            <p>145,00₴</p>
-          </div>
+      <div class="main__block__of__food">
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/борш.jpg" alt="Борщ">
+            </div>
+    
+              Борщ (400г)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div>
+              <p>145,00₴</p>
+            </div>
 
-          <button class="btn__buy">Додати до корзини</button>          
-        </section>
-  
-      </div>
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
+            </div>
 
-      <div class="block">
-        <section class="section__top">
-          <div>
-            <img src="./images/грибнийсуп.jpg" alt="Грибний суп">
-        
-          </div>
-  
-          Грибний суп (250г)
-  
-        </section>
-  
-        <section class="section__bottom">
-          <div>
-            <p>120,00₴</p>
-          </div>
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
 
-          <button class="btn__buy">Додати до корзини</button>          
-        </section>
-  
-      </div>
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/грибнийсуп.jpg" alt="Грибний суп">
+          
+            </div>
+    
+            Грибний суп (250г)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div>
+              <p>120,00₴</p>
+            </div>
 
-      <div class="block">
-        <section class="section__top">
-          <div>
-            <img src="./images/hkehjnktubqdefd6szm1.webp" alt="Солянка">
-          </div>
-  
-            Солянка (350г)
-  
-        </section>
-  
-        <section class="section__bottom">
-          <div class="price">
-            <p>160,00₴</p>
-          </div>
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
+            </div>
 
-          <button class="btn__buy">Додати до корзини</button>          
-        </section>
-  
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+
+        <div class="block">
+          <section class="section__top">
+            <div>
+              <img src="./images/hkehjnktubqdefd6szm1.webp" alt="Солянка">
+            </div>
+    
+              Солянка (350г)
+    
+          </section>
+    
+          <section class="section__bottom">
+            <div class="price">
+              <p>130,00₴</p>
+            </div>
+
+            <div class="plus__minus__btn">
+              <button class="btn__decrease">-</button>
+              <input type="text" class="value input__amount__of__food" value="0">
+              <button class="btn__increase">+</button>
+            </div>
+
+            <button class="btn__buy">Додати до корзини</button>          
+          </section>
+    
+        </div>
+
       </div>
     </main>
   </wrapper>
 
+
+  <script src="./index.js" type="module">
+  </script>
+  
   <script>
     function toggleNested(element) {
        var nestedList = element.querySelector('.nested');
