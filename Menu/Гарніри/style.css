@@ -20,7 +20,7 @@ ul {
 
 img {
   max-width: 80px;
-  max-height: 80px;
+  height: 80px;
 }
 
 p {
@@ -37,7 +37,7 @@ p {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  max-width: 1400px;
+  max-width: 1220px;
   margin: 0 auto;
   height: 60px;
   padding: 10px 0;
@@ -96,7 +96,7 @@ p {
 
 .wrapper {
   display: block;
-  max-width: 1400px;
+  max-width: 1220px;
   margin: 0 auto;
 }
 

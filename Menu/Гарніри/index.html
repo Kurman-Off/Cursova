@@ -15,63 +15,90 @@
 
     <header class="header">
 
-      <a class="header__logo__link" href="../mainPage/">
+      <a class="header__logo__link" href="/mainPage/">
         food delivery
       </a>
 
       <nav class="nav">
 
         <ul class="nav__list">
+
           <li class="nav__items menu toggle" onclick="toggleNested(this)">
-            <a href="#" class="nav__link">Menu</a>
+
+            <a  class="nav__link" href="#">Menu</a> 
+            
               <ul class="nested">
+                
                 <li class="nested__items">
+
                   <a class="nested__links" href="../Першістрави/">
                     Перші страви
                   </a>
+
                 </li>
                 
                 <li class="nested__items">
+
                   <a class="nested__links" href="../Другістрави/">
                     Другі страви
                   </a>
+
                 </li>
                 
                 <li class="nested__items">
+
                   <a class="nested__links" href="../Гарніри/">
                     Гарніри
                   </a>
+
                 </li>
                 
                 <li class="nested__items">
+
                   <a class="nested__links" href="../FastFood/">
                     FastFood
                   </a>
+
                 </li>
                 
                 <li class="nested__items">   
+
                   <a class="nested__links" href="../Напої/">
                     Напої
                   </a>
+
                 </li>
+              
               </ul>
+
+
           </li>
 
           
-          <li class="nav__items">
-            <a href="../Basket/" class="nav__link">
+          <li class="nav__items menu toggle" onclick="toggleNested(this)">
+
+            <a href="#" class="nav__link">
               Корзина               
             </a>
+
+              <ul class="nested active__basket"></ul>
+
           </li>
           
           <li class="nav__items">
+
             <a href="../login/" class="nav__link">
               Login
             </a>
+
           </li>
+
         </ul>
+
       </nav>
+
     </header>
+
   </div>
 
   <wrapper class="wrapper">
