@@ -23,7 +23,7 @@
 
         <ul class="nav__list">
           <li class="nav__items menu toggle" onclick="toggleNested(this)">
-            <a href="#" class="nav__link">Menu
+            <a href="#" class="nav__link">Menu</a>
               <ul class="nested">
                 <li class="nested__items">
                   <a class="nested__links" href="../Першістрави/">
@@ -55,7 +55,6 @@
                   </a>
                 </li>
               </ul>
-            </a>
           </li>
 
           
@@ -166,19 +165,6 @@
   </wrapper>
 
 
-  <script src="./index.js" type="module">
-  </script>
-
-  <script>
-    function toggleNested(element) {
-       var nestedList = element.querySelector('.nested');
-       nestedList.classList.toggle('active');
-       document.addEventListener('click', function (event) {
-         if (!element.contains(event.target)) {
-           nestedList.classList.remove('active');
-         }
-       });
-     }
-   </script>
+  <script src="./index.js"></script>
 </body>
 </html>
