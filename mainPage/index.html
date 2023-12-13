@@ -12,32 +12,93 @@
 <body>
   
     <div class="header__container">  
+
       <header class="header">
-        <a class="header__logo__link" href="./index.html">
+
+        <a class="header__logo__link" href="./">
           food delivery
         </a>
+
         <nav class="nav">
+
           <ul class="nav__list">
-            <li class="nav__items">
-              <a href="#" class="nav__link">
-                Katalog
-              </a>
+
+            <li class="nav__items menu toggle" onclick="toggleNested(this)">
+
+              <a  class="nav__link" href="#">Menu</a> 
+              
+                <ul class="nested">
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../Menu/Першістрави/">
+                      Перші страви
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../Menu/Другістрави/">
+                      Другі страви
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../Menu/Гарніри/">
+                      Гарніри
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">
+
+                    <a class="nested__links" href="../Menu/FastFood/">
+                      FastFood
+                    </a>
+
+                  </li>
+                  
+                  <li class="nested__items">   
+
+                    <a class="nested__links" href="../Menu/Напої/">
+                      Напої
+                    </a>
+
+                  </li>
+                
+                </ul>
+
+
             </li>
 
+            
+            <li class="nav__items menu toggle" onclick="toggleNested(this)">
+
+              <a href="#" class="nav__link">
+                Корзина               
+              </a>
+
+                <ul class="nested active__basket"></ul>
+
+            </li>
+            
             <li class="nav__items">
-              <a href="../login/index.html" class="nav__link">
+
+              <a href="../login/" class="nav__link">
                 Login
               </a>
+
             </li>
 
-            <li class="nav__items">
-              <a href="../login/index.html" class="nav__link">
-                Корзина
-              </a>
-            </li>
           </ul>
+
         </nav>
+
       </header>
+
     </div>
 
     <container class="main__container">
@@ -53,11 +114,16 @@
             </h1>
 
           </div>
+
+          <div class="section__bottom__img__block section__img ds__sm">
+            <img class="section__bottom__img" src="./images/desktop.jpg" alt="Courier Foto">
+          </div>
+
         </section>
 
         <section class="section__bottom section">
           
-          <div class="section__bottom__text">
+          <div class="section__bottom__text ds__sm">
             <h2 class="section__h">
               Заробляйте гроші, доставляючи їжу
             </h2>
@@ -106,20 +172,15 @@
             
           </div>
 
-          <div class="section__bottom__img__block">
+          <div class="section__bottom__img__block section__img ds__sm">
             <img class="section__bottom__img" src="./images/courier.webp" alt="Courier Foto">
           </div>
         
         </section>
 
-
-
-
-        
-
         <section class="section__bottom section">
           
-          <div class="section__bottom__text">
+          <div class="section__bottom__text ds__sm">
             <h2 class="section__h">
               Обирай, замовляй та <br>відстежуй доставку у додатку
             </h2>
@@ -167,20 +228,15 @@
             
           </div>
 
-          <div class="section__bottom__img__block">
-            <img class="section__bottom__img" src="./images/image.webp" alt="Courier Foto">
+          <div class="section__bottom__img__block section__img ds__sm">
+            <img class="section__bottom__img" src="./images/image.webp" alt="mobile Foto">
           </div>
         
         </section>
 
-
-
-
-
-
         <section class="section__support section">
 
-          <div class="section__sepport__text">
+          <div class="section__support__text">
 
             <div class="section__support__img">
 
@@ -209,11 +265,10 @@
               </p>
 
               <button class="section__support__btn">
-                <a class="section__support__btn__a" href="../LoginCourier/index.html">Зареєструватися</a>
+                <a class="section__support__btn__a" href="../RegistrationCourier/">Зареєструватися</a>
               </button>
 
             </div>
-
 
             
             <div class="section__support__links__user">
@@ -221,7 +276,7 @@
               <img class="section__support__img" src="./images/careers-image.webp" alt="User Foto">
 
               <h3 class="section__h3">
-                Стати кур'єром
+                Користувач
               </h3>
 
               <p class="section__p section__support__p">
@@ -229,21 +284,65 @@
               </p>
               
               <button class="section__support__btn">
-                <a class="section__support__btn__a" href="../loginUser/index.html">Зареєструватися</a>
+
+                <a class="section__support__btn__a" href="../Registration/">Зареєструватися</a>
+              
               </button>
 
           </div>
-
 
         </section>
     
       </main>
 
+    </container>
+    
+    
+    <section class="section__footer">
+
+    <container class="main__container">
+      
       <footer class="footer">
+       
+        <div class="footer__logo">
+
+          <a class="header__logo__link" href="./">
+            food delivery
+          </a>
+
+        </div>
+       
+        <div class="footer__contact">
+
+          <h2>Contact Information</h2>
+          
+          <p>Address: 123 Main Street, City, Country</p>
+          
+          <p>Email: info@example.com</p>
+          
+          <p>Phone: +1 123-456-7890</p>
+
+        </div>
+        
+        <div class="footer__aboutUs">
+
+          <h2>
+
+            <a href="../AboutUs/inedx.html">
+              About us
+            </a>
+
+          </h2>
+
+        </div>
 
       </footer>
-  
+      
     </container>
+
+  </section>
+  
+  <script src="./index.js"></script>
 
 </body>
 </html>
